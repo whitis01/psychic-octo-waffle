@@ -15,8 +15,8 @@ RUN apt install -y python3-pip
 # Make Python more robust
 RUN apt install -y build-essential libssl-dev libffi-dev python3-dev
 
-# Install the Python standard ENV
-RUN apt install -y python3-venv
+# We will need this to read from an RSS Feed.
+RUN pip install feedparser
 
 # Create the working directory
 RUN mkdir -p /var/www/html
