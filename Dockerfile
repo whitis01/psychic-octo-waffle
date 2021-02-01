@@ -25,13 +25,7 @@ WORKDIR /var/www/html
 # Pull in the environment
 COPY . /var/www/html
 
-# Simple test to check contents made it, then activate it.
-RUN ls -alt rss_proj
-RUN ["/bin/bash", "-c", "source ./rss_proj/bin/activate"]
-
 # Move into the working directory and check to make sure everything works.
-WORKDIR /var/www/html/rss_proj
-RUN cd /var/www/html/rss_proj
 RUN python3 ./hello.py
 
 # Open up valid ports to listen to outside of the container
