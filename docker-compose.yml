@@ -1,0 +1,25 @@
+version: '3.7'
+services:
+    python:
+        container_name: python
+        build: 
+            context: . 
+        volumes:
+         - .:/var/www/html
+         - vim-scripts:/var/www/vim
+        ports:
+         - "8080:80"
+        depends_on:
+         - apache
+    apache:
+        container_name: apache
+        image: httpd:latest
+    vim:
+        container_name: vim
+        image: iwhite5/vim:latest
+        volumes: 
+         - vim-scripts:/var/www/vim
+volumes:
+    vim-scripts:
+
+
