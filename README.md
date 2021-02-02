@@ -3,7 +3,7 @@ This is a repo for the coding challenge presented by Metabolon.
 
 
 ## Instructions To Build/Run
-This project runs with Docker. There are two pieces the user will need to run the program. The first is the <b>[docker-machine](https://docs.docker.com/machine/install-machine/). NOTE: If you are running on a linux system, you will not need to do this as the daemon is already supported. Otherwise, use the previous description to start up a virtualization program using software such as, VirtualBox, VMware, Parallels, etc.</b> This program was built and created using Parallels, but any virtalization software should do.
+This project runs with Docker. There are two pieces the user will need to run the program. The first is the <b>[docker-machine](https://docs.docker.com/machine/install-machine/). NOTE: If you are running on a linux system, you will not need to do this as the daemon is already supported. Otherwise, use the previous description to start up a virtualization program using software such as, VirtualBox, VMware, Parallels, etc.</b> This program was built using Parallels, but any virtalization software should do.
   
   <b>$ docker-machine create default
   
