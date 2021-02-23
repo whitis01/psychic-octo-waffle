@@ -26,7 +26,7 @@ WORKDIR /var/www/html
 COPY . /var/www/html
 
 # Move into the working directory and check to make sure everything works.
-RUN python3 ./hello.py
+RUN python3 ./feed.py
 
 # Open up valid ports to listen to outside of the container
 # Not sure if I'll need these yet.
